@@ -1,28 +1,37 @@
-import '@/i18n'
-import RootRouter from '@/screens/RootRouter'
-import { NavigationContainer } from '@react-navigation/native'
+import React, { useEffect } from 'react'
 import { StatusBar } from 'react-native'
-import { GestureHandlerRootView } from 'react-native-gesture-handler'
-import { SafeAreaProvider } from 'react-native-safe-area-context'
 
-const Root = () => {
-  return (
-    <>
-      <RootRouter />
-    </>
-  )
-}
+import SplashScreen from 'react-native-splash-screen'
+// import { Provider } from 'react-redux'
+// import { PersistGate } from 'redux-persist/integration/react'
+
+import { Context } from '@/common/context'
+
+import { Navigator } from '@/navigation'
+
+// import { persistor, store } from './store'
 
 const App = () => {
+  useEffect(() => {
+    SplashScreen.hide()
+  }, [])
+
   return (
-    <SafeAreaProvider>
-      <StatusBar backgroundColor="transparent" translucent />
-      <GestureHandlerRootView>
-        <NavigationContainer>
-          <Root />
-        </NavigationContainer>
-      </GestureHandlerRootView>
-    </SafeAreaProvider>
+    <>
+      <StatusBar
+        barStyle={'dark-content'}
+        backgroundColor={'transparent'}
+        translucent
+      />
+
+      {/* <Provider store={store}> */}
+      {/* <PersistGate loading={null} persistor={persistor}> */}
+      <Context>
+        <Navigator />
+      </Context>
+      {/* </PersistGate> */}
+      {/* </Provider> */}
+    </>
   )
 }
 
