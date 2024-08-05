@@ -1,31 +1,26 @@
-// import { EFonts } from './font'
-
 import { EColors } from './colors'
+import { EFonts } from './fonts'
 
-export type TFont = {
+export type TFontProps = {
   size?: string
   color?: EColors
-  // family?: EFonts
+  family?: EFonts
   style?: 'normal' | 'italic'
   align?: 'center' | 'left' | 'right'
 }
 
-export type TMargin = {
+export type TMarginProps = {
   mTop?: string
   mLeft?: string
   mRight?: string
   mBottom?: string
 }
 
-export type TFlex = {
+export type TFlexProps = {
   direction?: TFlexDirectionVariants
   align?: TFlexAlignVariants
   justify?: TFlexJustifyVariants
   wrap?: TFlexWrapVariants
-}
-
-export type TColor = {
-  color: EColors
 }
 
 export type TFlexDirectionVariants =

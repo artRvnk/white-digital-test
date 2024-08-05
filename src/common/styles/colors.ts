@@ -4,4 +4,6 @@ export const enum EColors {
   grey = '#979797',
   gray = '#9D9D9D',
   yellow = '#FED138',
+
+  transparent = 'transparent',
 }

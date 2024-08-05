@@ -1,14 +1,12 @@
 import React, { FC } from 'react'
-import { LayoutChangeEvent } from 'react-native'
+import { LayoutChangeEvent, View } from 'react-native'
 
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
-import * as S from './styles'
 import { TBottomBarProps } from './types'
 
 export const BottomBar: FC<TBottomBarProps> = ({
   children,
-  containerStyle = {},
   getHeight = () => {},
 }) => {
   const { bottom } = useSafeAreaInsets()
@@ -18,13 +16,14 @@ export const BottomBar: FC<TBottomBarProps> = ({
     getHeight(height)
   }
 
+  const dynamicPaddingBottom = bottom === 0 ? '16' : bottom
+
   return (
-    <S.Container
+    <View
       onLayout={handleLayout}
-      bottomInst={bottom}
-      style={containerStyle}
+      className={`w-full bg-blue-500 flex-row items-center justify-between pb-${dynamicPaddingBottom}`}
     >
       {children}
-    </S.Container>
+    </View>
   )
 }

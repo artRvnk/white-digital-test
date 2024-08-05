@@ -12,8 +12,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		72F04F8C8A0144C3821485F2 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B52DAA559E44CF28F2EA836 /* SF-Pro-Display-Regular.otf */; };
 		7699B88040F8A987B510C191 /* libPods-testapp-testappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-testapp-testappTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		AAAAD0C2014245F88681BD57 /* Abel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5CBFA3CF2654B849ECC5440 /* Abel-Regular.ttf */; };
 		C4BD0EE0D791698FABF00A0C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 06CB37036EBB8E2A162E138D /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-testapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = testapp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-testapp-testappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testapp-testappTests.release.xcconfig"; path = "Target Support Files/Pods-testapp-testappTests/Pods-testapp-testappTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B52DAA559E44CF28F2EA836 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Display-Regular.otf"; path = "../src/assets/fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		D5CBFA3CF2654B849ECC5440 /* Abel-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Abel-Regular.ttf"; path = "../src/assets/fonts/Abel-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -84,6 +88,16 @@
 				00E356F11AD99517003FC87E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04DCD9E3068F48F2BC9BFB29 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9B52DAA559E44CF28F2EA836 /* SF-Pro-Display-Regular.otf */,
+				D5CBFA3CF2654B849ECC5440 /* Abel-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* testapp */ = {
@@ -127,6 +141,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				04DCD9E3068F48F2BC9BFB29 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -250,6 +265,8 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				C4BD0EE0D791698FABF00A0C /* PrivacyInfo.xcprivacy in Resources */,
+				72F04F8C8A0144C3821485F2 /* SF-Pro-Display-Regular.otf in Resources */,
+				AAAAD0C2014245F88681BD57 /* Abel-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
